@@ -1,0 +1,17 @@
+<h1>You played scissors!</h1>
+
+<h1>
+  The computer played
+
+  <%= computer_move = ["rock", "paper", "scissors"].sample %>
+</h1>
+
+<h1>
+<% if computer_move == "rock" %>
+  <h1>You lose!</h1>
+  <% elsif computer_move == "paper" %>
+  <h1>You win!</h1>
+  <% else %>
+  <h1>You tied!</h1>
+  <% end %>
+</h1>
