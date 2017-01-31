@@ -1,17 +1,92 @@
-<h1>You played rock!</h1>
 
 <link rel="stylesheet" href="/assets/css/bootstrap.css">
 
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
+<head>
+  <title>RockPaperScissors</title>
+  <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
+  <script src="/assets/application-25bd6b47ad2ef49757a639cd9dc9d7c4b137f7a0bf03bb8d13757d905d6dfcef.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="eFCRAC1VWmonwEcfqBiZLOy3G4sr0GpFuis9zRA1y+tdZvKNK0I8oFx3vBujOmyMGcouLVzHD8F/5etnmQOLPw==" />
 
-<a href="/scissors">TRY SCISSORS</a>
-<a href="/paper">TRY PAPER</a>
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<h1>
-  The computer played
+  <style>
+    .move-icon {
+      font-size: 144px;
+    }
+  </style>
+</head>
+<body>
 
-  <%= @computer_move %>
-</h1>
+<div class="container">
+  <hr>
+  <a href="/">
+    HOME
+  </a>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 col-xs-12">
+    <div class="btn-group btn-group-justified">
+      <a href="/rock" class="btn btn-block btn-primary">
+        Play Rock
+      </a>
 
-<h1>
-<% @outcome %>
-</h1>
+      <a href="/paper" class="btn btn-block btn-info">
+        Play Paper
+      </a>
+
+      <a href="/scissors" class="btn btn-block btn-primary">
+        Play Scissors
+      </a>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="col-md-4 col-md-offset-2 col-xs-6">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h2 class="text-center">
+        rock
+      </h2>
+    </div>
+    <div class="panel-body text-center">
+      <i class="fa fa-hand-rock-o move-icon"></i>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 col-xs-6">
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h2 class="text-center">
+        <%= @computer_move %>
+      </h2>
+    </div>
+    <div class="panel-body text-center">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+  <div class="well text-center">
+    <h1>
+
+      <span class="label label-warning">
+        <%= @outcome %>
+      </span>
+    </h1>
+
+  </div>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
